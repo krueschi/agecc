@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Module file for agecc.
+ */
+// hook_menu()
+function agecc_menu() {
+  $items=array();
+  $items['agecc']=array(
+    'title'=>'Age class calculator',
+    'description'=>'Calc an age class',
+    'page callback'=>''
+  )
+}
+
+ // hook_help()
+ function agecc_help($path, $arg) {
+   switch ($path) {
+     case 'agecc':
+       // Help text for the simple page registered for this path.
+       return t('This is help text for a simple page of the agecc module.');
+
+     case 'admin/help#agecc':
+       // Help text for the admin section, using the module name in the path.
+       return t("This is help text created in the page agecc's second case.");
+   }
+ }

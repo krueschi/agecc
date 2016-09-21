@@ -1,0 +1,4 @@
+name = Age class calc
+core = 7.x
+project = "custom"
+description = Calculating official DJB age class from birth date.
